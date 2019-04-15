@@ -45,13 +45,14 @@ public class AesEncryptUtils {
     }
 
     public static void main(String[] args) throws Exception {
-        String content = "{}";
+        String content = "{ dfdfdfff好}";
         System.out.println("加密前：" + content);
 
         String encrypt = aesEncrypt(content, KEY);
         System.out.println(encrypt.length() + ":加密后：" + encrypt);
 
-        String decrypt = aesDecrypt("YmenPO8v+IPafQULwZWpyQ==", KEY);
+        //String decrypt = aesDecrypt("YmenPO8v+IPafQULwZWpyQ==", KEY);//hello word
+        String decrypt = aesDecrypt(encrypt, KEY);
         System.out.println("解密后：" + decrypt);
     }
 }

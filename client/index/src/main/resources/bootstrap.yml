@@ -6,10 +6,6 @@ spring:
       discovery:
         enabled: true
         serviceId: config
-  redis:
-    host: 127.0.0.1
-    port: 6379
-    password: 251212
   rabbitmq:
     host: 127.0.0.1
     port: 5672
